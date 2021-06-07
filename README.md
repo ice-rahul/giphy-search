@@ -32,7 +32,7 @@ Following stack has been used in the project
 
 - Clone the repository
 - Install the required dependency: `npm i`
-- Run the project: `npm run install`
+- Run the project: `npm run start`
 
 ## Link to the hosted project
 
