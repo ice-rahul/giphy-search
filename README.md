@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Giphy Search - A project to search and share gifs fetched from [giphy](https://giphy.com/)
 
-## Available Scripts
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2db910b2-1439-4502-ae1f-ee8807c6350a/deploy-status)](https://app.netlify.com/sites/mygiphy-search/deploys)
 
-In the project directory, you can run:
+## Requirements
 
-### `yarn start`
+### MVP
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Add search field where user can search for gifs
+- Display paginated trending gifs
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Additional Requirement
 
-### `yarn test`
+- Display search suggestions during search
+- Infinite scrolling for trending gifs
+- Polish and UX
+- Highly reusable components
+- Clean and organized code
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technical Specification
 
-### `yarn build`
+Project is created using `create-react-app` with react version `17.0.2`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Following stack has been used in the project
+- ReactJS
+- React Router
+- React Query
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Steps to run the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Clone the repository
+- Install the required dependency: `npm i`
+- Run the project: `npm run install`
 
-### `yarn eject`
+## Link to the hosted project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Click here to view the project](https://mygiphy-search.netlify.app/)
