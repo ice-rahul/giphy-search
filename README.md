@@ -3,6 +3,7 @@
 Giphy Search - A project to search and share gifs fetched from [giphy](https://giphy.com/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2db910b2-1439-4502-ae1f-ee8807c6350a/deploy-status)](https://app.netlify.com/sites/mygiphy-search/deploys)
+[![Code style: airbnb](https://img.shields.io/badge/code%20style-airbnb-blue.svg?style=plastic)](https://github.com/airbnb/javascript)
 
 ## Requirements
 
