@@ -1,0 +1,10 @@
+@import 'assets/css/variables';
+$root: '.Footer';
+
+#{$root}{
+  background-color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+}

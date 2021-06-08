@@ -1,0 +1,12 @@
+@import 'assets/css/variables';
+$root: '.TextInput';
+
+#{$root} {
+  padding: 10px 15px;
+  color: $black;
+  outline: none;
+  border: 0;
+  &::placeholder{
+    color: $black;  
+  }
+}

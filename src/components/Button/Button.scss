@@ -1,0 +1,12 @@
+@import 'assets/css/variables';
+$root: '.Button';
+
+#{$root}{
+ background: $blue;
+ color: $white;
+ font-weight: 700;
+ border-radius: 4px;
+ border: 0; 
+ padding: 10px;
+ cursor: pointer;
+}

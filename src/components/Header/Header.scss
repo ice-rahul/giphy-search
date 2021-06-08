@@ -1,0 +1,57 @@
+@import 'assets/css/variables';
+$variant1: '.Header';
+$variant2: '.HeaderCondensed';
+
+#{$variant1} {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: $black;
+  .search-box{
+    width: 40%;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  &:focus-within{
+    .search-box{
+      box-shadow: 0 0 5px 0 $skin;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .search-box{
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .search-box{
+      width: 60%;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .search-box{
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .search-box{
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .search-box{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .hide-xs-350px{
+      display: none;
+    }
+  }
+}
+
+#{$variant2} {
+  display: flex;
+}
