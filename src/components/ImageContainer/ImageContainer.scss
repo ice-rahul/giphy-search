@@ -1,0 +1,17 @@
+@import 'assets/css/variables';
+$root: '.ImageContainer';
+
+#{$root}{
+  border-radius: 10px;
+  width: 300px;
+  object-fit: cover;
+  box-shadow: 0 0 10px 0;
+  &:hover{
+    box-shadow: 0 0 15px 2px $skin;
+  }
+}
+.svg {
+  &:hover{
+    box-shadow: 0 0 15px 2px $skin;
+  }
+}

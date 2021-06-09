@@ -54,4 +54,15 @@ $variant2: '.HeaderCondensed';
 
 #{$variant2} {
   display: flex;
+  .search-box{
+    width: 30%;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  &:focus-within{
+    .search-box{
+      box-shadow: 0 0 5px 0 $skin;
+    }
+  }
 }

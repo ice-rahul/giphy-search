@@ -2,3 +2,8 @@ export { default as Button } from './Button';
 export { default as Footer } from './Footer';
 export { default as Header } from './Header';
 export { default as TextInput } from './TextInput';
+export { default as withQuery } from './WithQuery';
+export { default as ImageContainer } from './ImageContainer';
+export { default as Share } from './Share';
+export { default as GifDetails } from './GifDetails';
+export { default as Modal } from './Modal';
