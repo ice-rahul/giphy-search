@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
@@ -14,8 +13,6 @@ function MyGiphy({ setPage }) {
     const response = await fetch(`https://api.giphy.com/v1/gifs/${id}?api_key=${process.env.REACT_APP_GIPHY_API_KEY}`);
     return response.json();
   });
-
-  console.log(`https://api.giphy.com/v1/gifs/${id}?api_key=${process.env.REACT_APP_GIPHY_API_KEY}`);
 
   useEffect(() => {
     if (setPage) setPage('MyGiphy');

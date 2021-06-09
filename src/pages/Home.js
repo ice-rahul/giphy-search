@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
 import { ImageContainer, Modal } from 'components';
 import { useQuery } from 'react-query';
@@ -6,7 +5,7 @@ import getImage from 'utils/getImage';
 import PropTypes from 'prop-types';
 
 const trendingGifs = async () => {
-  const res = await fetch('https://api.giphy.com/v1/gifs/trending?api_key=Sp6spcUcBELoU5Fv6plloyNIYM4vD9GQ&limit=25&rating=r');
+  const res = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=25&rating=r`);
   return res.json();
 };
 
@@ -17,11 +16,9 @@ function Home({ setPage }) {
   useEffect(() => {
     if (setPage) setPage('Home');
   }, []);
-  console.log(data);
   const handleModal = (value) => {
     setModal(true);
     setLink(`${process.env.REACT_APP_BASE_URL}${value}`);
-    console.log('clicked');
   };
   return (
     <>
