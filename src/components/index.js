@@ -7,3 +7,4 @@ export { default as ImageContainer } from './ImageContainer';
 export { default as Share } from './Share';
 export { default as GifDetails } from './GifDetails';
 export { default as Modal } from './Modal';
+export { default as Loading } from './Loading';
