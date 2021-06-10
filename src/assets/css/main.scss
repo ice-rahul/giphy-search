@@ -118,6 +118,10 @@ code {
     min-width: 20%;
   }
 
+  .min-width-300px{
+    min-width: 300px;
+  }
+
   .ml-5px{
     margin-left: 5px;
   }
@@ -132,6 +136,10 @@ code {
 
   .mt-20px{
     margin-top: 20px;
+  }
+
+  .object-fit-contain{
+    object-fit: contain;
   }
 
   .padding-5px{

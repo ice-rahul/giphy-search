@@ -19,6 +19,9 @@ function App() {
             <Route path="/detail/:id">
               <MyGiphy setPage={setPage} />
             </Route>
+            <Route path="/:term">
+              <Home setPage={setPage} />
+            </Route>
             <Route path="/">
               <Home setPage={setPage} />
             </Route>

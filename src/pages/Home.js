@@ -1,16 +1,27 @@
+/* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
 import { ImageContainer, Modal } from 'components';
 import { useQuery } from 'react-query';
 import getImage from 'utils/getImage';
 import PropTypes from 'prop-types';
+import { useParams } from 'react-router-dom';
+import getTrendingURL from 'utils/getTrendingURL';
+import getSearchURL from 'utils/getSearchURL';
 
 const trendingGifs = async () => {
-  const res = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=25&rating=r`);
+  const res = await fetch(getTrendingURL(0));
+  return res.json();
+};
+
+const searchGifs = async (query) => {
+  console.log(getSearchURL(query, 0));
+  const res = await fetch(getSearchURL(query, 0));
   return res.json();
 };
 
 function Home({ setPage }) {
-  const { data } = useQuery('trending', trendingGifs);
+  const { term } = useParams();
+  const { data } = useQuery(term ? ['search', term] : 'trending', term ? () => searchGifs(term) : trendingGifs);
   const [modal, setModal] = useState(false);
   const [link, setLink] = useState('');
   useEffect(() => {

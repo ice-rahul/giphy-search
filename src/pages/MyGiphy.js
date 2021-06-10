@@ -28,7 +28,7 @@ function MyGiphy({ setPage }) {
 
   return (
     <div className="d-flex text-center justify-center">
-      <img src={getImage(id)} className="border-radius-4px" alt={title} />
+      <img src={getImage(id)} className="bg-white border-radius-4px min-width-300px object-fit-contain padding-5px" alt={title} />
       {!isLoading && <GifDetails gifId={id} title={title} publishedDate={publishedDate} shareUrl={`${process.env.REACT_APP_BASE_URL}/detail/${id}`} /> }
     </div>
   );
