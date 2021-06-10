@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
 import { ImageContainer, Modal } from 'components';
 import { useQuery } from 'react-query';
@@ -14,14 +13,15 @@ const trendingGifs = async () => {
 };
 
 const searchGifs = async (query) => {
-  console.log(getSearchURL(query, 0));
   const res = await fetch(getSearchURL(query, 0));
   return res.json();
 };
 
 function Home({ setPage }) {
   const { term } = useParams();
-  const { data } = useQuery(term ? ['search', term] : 'trending', term ? () => searchGifs(term) : trendingGifs);
+  const { data } = useQuery(term ? ['search', term] : 'trending', term ? () => searchGifs(term) : trendingGifs, {
+    refetchOnWindowFocus: false,
+  });
   const [modal, setModal] = useState(false);
   const [link, setLink] = useState('');
   useEffect(() => {
