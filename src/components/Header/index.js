@@ -40,7 +40,7 @@ function Header({ page }) {
         <Button onClick={handleSearch} />
         <Button buttonColor={COLORS.GREEN} className="margin-5px hide-xs-350px" onClick={handleShare} text="Share &#10084;" textColor={COLORS.WHITE} />
       </div>
-      <div className="text-center">
+      <div className="text-center suggestions flex-wrap justify-center">
         <Button
           buttonColor={COLORS.BLACK}
           className="margin-5px"

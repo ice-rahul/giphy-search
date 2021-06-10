@@ -9,10 +9,10 @@ import getVideo from 'utils/getVideo';
 import downloadFile from 'utils/downloadFile';
 
 function GifDetails({
-  gifId, shareUrl, title, publishedDate,
+  className, gifId, shareUrl, title, publishedDate,
 }) {
   return (
-    <div className="bg-white d-flex flex-column min-width-20 ml-5px mr-5px padding-10px text-left GifDetails">
+    <div className={`bg-white d-flex flex-column ml-5px mr-5px padding-10px text-left GifDetails ${className || ''}`}>
       <span className="font-1-2-em font-bold padding-10px pb-0">{title}</span>
       <span className="padding-10px">
         {getDateString(publishedDate)}
@@ -46,6 +46,7 @@ function GifDetails({
 }
 
 GifDetails.propTypes = {
+  className: PropTypes.string,
   gifId: PropTypes.string,
   shareUrl: PropTypes.string,
   title: PropTypes.string,
@@ -53,6 +54,7 @@ GifDetails.propTypes = {
 };
 
 GifDetails.defaultProps = {
+  className: '',
   gifId: '',
   shareUrl: '',
   title: '',

@@ -1,0 +1,19 @@
+.giphy-container{
+  width:70%;
+
+  .container-right, .container-left{
+    width:50%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    padding: 0px;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 0px;
+    .container-right, .container-left{
+      width:90%;
+    }
+  }
+}
