@@ -4,8 +4,13 @@ $root: '.ImageContainer';
 #{$root}{
   border-radius: 10px;
   width: 300px;
+  min-height: 80px;
   object-fit: cover;
   box-shadow: 0 0 10px 0;
+  background: url('../../assets//images/search.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   &:hover{
     box-shadow: 0 0 15px 2px $skin;
   }
